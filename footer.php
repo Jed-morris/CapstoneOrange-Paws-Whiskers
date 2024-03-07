@@ -100,7 +100,7 @@ function scrollToSection(sectionId) {
     signUpForm.style.display = 'none';
 
     // Magdagdag ng event listener sa "Sign Up" button
-    signUpButton.addEventListener('click', function() {
+    signUp.addEventListener('click', function() {
         // I-toggle ang pagpapakita at pagkubli ng login at sign up form
         if (loginForm.style.display !== 'none') {
             loginForm.style.display = 'none';
