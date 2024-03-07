@@ -59,32 +59,19 @@
     </script>
 
 <script>
-    /* Navigation active link script: */
-    // Kunin ang lahat ng mga link sa navbar
-    var navLinks = document.querySelectorAll('.navbar-nav .nav-link');
-
-    // Iterasyon sa bawat link
-    navLinks.forEach(function(navLink) {
-        // I-check kung ang URL ng link ay katulad ng kasalukuyang URL
-        if (navLink.href === window.location.href) {
-            // Kung oo, idagdag ang class "active"
-            navLink.parentNode.classList.add('active');
+    function openItems(x) {
+        var i, cardContainer, navLinks;
+        cardContainer = document.getElementsByClassName("card-container");
+        for (i = 0; i < cardContainer.length; i++) {
+            cardContainer[i].style.display = "none";
         }
-    });
-
-    /* Functionality for opening items and scrolling to sections: */
-    function openItems(sectionId) {
-    var i, cardContainer, navLinks;
-    cardContainer = document.getElementsByClassName("card-container");
-    for (i = 0; i < cardContainer.length; i++) {
-        cardContainer[i].style.display = "none";
+        document.getElementById(x).style.display = "grid";
     }
-    document.getElementById(sectionId).style.display = "grid";
-    scrollToSection(sectionId);
-}
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
 
-    /* SCROLL TO TOP button functionality: */
-    // When the user scrolls down 20px from the top of the document, show the button
+/* SCROLL TO TOP button functionality: */
+// When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
