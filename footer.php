@@ -90,7 +90,7 @@ function scrollToSection(sectionId) {
 
     /* Script for toggling login and sign up forms: */
     // Kunin ang element ng "Sign Up" button
-    var signUpButton = document.getElementById('signUp');
+    var signUp = document.getElementById('signUp');
 
     // Kunin ang mga form ng login at sign up
     var loginForm = document.getElementById('loginForm');
