@@ -27,9 +27,10 @@
             <a href="#" class="forget-pw">Forgot Password?</a>
         </div>
         <button class="btn btn-primary w-100 py-2" type="submit" id="onLogin">Sign in</button>
-        <div class="login-signup">Don't have an account? <a href="#" id="signUp">Sign Up</a></div>
+        <div class="login-signup">Don't have an account? <a href="#" id="signUpLink">Sign Up</a></div>
         <p class="mt-5 mb-3 text-body-secondary">&copy; 2017–2023</p>
     </form>
+    <div id="signupContainer" style="display: none;">
     <form name="regForm" class="signup-form" id="signupForm">
         <!--<img class="mb-4" src="logo.png" alt="">-->
         <h1 class="h3 mb-3 fw-normal">Please sign up</h1>
@@ -77,3 +78,11 @@
         <div class="login-signup">Already have an account? <a href="#" id="logIn">Login</a></div>
     </form>
 </div>
+</div>
+
+<script>
+    document.getElementById('signUpLink').addEventListener('click', function(event) {
+        event.preventDefault();
+        document.getElementById('signupContainer').style.display = 'block';
+    });
+</script>
