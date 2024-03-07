@@ -27,7 +27,7 @@
             <a href="#" class="forget-pw">Forgot Password?</a>
         </div>
         <button class="btn btn-primary w-100 py-2" type="submit" id="onLogin">Sign in</button>
-        <div class="login-signup">Don't have an account? <a href="#" id="signUpLink">Sign Up</a></div>
+        <div class="login-signup">Don't have an account? <a href="#" id="signUp">Sign Up</a></div>
         <p class="mt-5 mb-3 text-body-secondary">&copy; 2017–2023</p>
     </form>
     <div id="signupContainer" style="display: none;">
@@ -81,8 +81,26 @@
 </div>
 
 <script>
-    document.getElementById('signUpLink').addEventListener('click', function(event) {
-        event.preventDefault();
-        document.getElementById('signupContainer').style.display = 'block';
-    });
+    // Kunin ang element ng "Sign Up" button
+var signUpButton = document.getElementById('signUp');
+
+// Kunin ang mga form ng login at sign up
+var loginForm = document.getElementById('loginForm');
+var signUpForm = document.getElementById('signupForm');
+
+// I-set ang default visibility ng sign up form na hidden
+signUpForm.style.display = 'none';
+
+// Magdagdag ng event listener sa "Sign Up" button
+signUpButton.addEventListener('click', function() {
+    // I-toggle ang pagpapakita at pagkubli ng login at sign up form
+    if (loginForm.style.display !== 'none') {
+        loginForm.style.display = 'none';
+        signUpForm.style.display = 'block';
+    } else {
+        loginForm.style.display = 'block';
+        signUpForm.style.display = 'none';
+    }
+});
+
 </script>
