@@ -60,13 +60,15 @@
 
 <script>
     function openItems(x) {
-        var i, cardContainer, navLinks;
-        cardContainer = document.getElementsByClassName("card-container");
-        for (i = 0; i < cardContainer.length; i++) {
+    var i, cardContainer, navLinks;
+    cardContainer = document.getElementsByClassName("card-container");
+    for (i = 0; i < cardContainer.length; i++) {
+        if (cardContainer[i].id !== 'login') {
             cardContainer[i].style.display = "none";
         }
-        document.getElementById(x).style.display = "grid";
     }
+    document.getElementById(x).style.display = "grid";
+}
     // Get the element with id="defaultOpen" and click on it
     document.getElementById("defaultOpen").click();
 
