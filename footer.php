@@ -94,27 +94,27 @@ function scrollToSection(sectionId) {
 
     // Kunin ang mga form ng login at sign up
     var loginForm = document.getElementById('loginForm');
-    var signUpForm = document.getElementById('signupForm');
+    var signUpContainer = document.getElementById('signUpContainer');
 
     // I-set ang default visibility ng sign up form na hidden
-    signUpForm.style.display = 'none';
+    signUpContainer.style.display = 'none';
 
     // Magdagdag ng event listener sa "Sign Up" button
     signUp.addEventListener('click', function() {
         // I-toggle ang pagpapakita at pagkubli ng login at sign up form
         if (loginForm.style.display !== 'none') {
             loginForm.style.display = 'none';
-            signUpForm.style.display = 'block';
+            signUpContainer.style.display = 'block';
         } else {
             loginForm.style.display = 'block';
-            signUpForm.style.display = 'none';
+            signUpContainer.style.display = 'none';
         }
     });
 
     document.getElementById('signUp').addEventListener('click', function(event) {
         event.preventDefault();
         document.getElementById('loginForm').style.display = 'none';
-        document.getElementById('signupForm').style.display = 'block';
+        document.getElementById('signUpContainer').style.display = 'block';
     });
 
     /* Scroll to top button functionality: */
