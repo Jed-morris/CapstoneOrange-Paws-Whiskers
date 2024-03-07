@@ -59,7 +59,7 @@
     </script>
 
 <script>
-    function openItems(x) {
+function openItems(x) {
     var i, cardContainer, navLinks;
     cardContainer = document.getElementsByClassName("card-container");
     for (i = 0; i < cardContainer.length; i++) {
@@ -69,8 +69,14 @@
     }
     document.getElementById(x).style.display = "grid";
 }
+
+document.getElementById('signUp').addEventListener('click', function() {
+    var signUpForm = document.getElementById('signupForm');
+    signUpForm.style.display = signUpForm.style.display === 'none' ? 'block' : 'none';
+});
+
     // Get the element with id="defaultOpen" and click on it
-    document.getElementById("defaultOpen").click();
+document.getElementById("defaultOpen").click();
 
 /* SCROLL TO TOP button functionality: */
 // When the user scrolls down 20px from the top of the document, show the button
