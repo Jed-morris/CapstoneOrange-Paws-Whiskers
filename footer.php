@@ -68,9 +68,7 @@
             navLink.parentNode.classList.add('active');
         }
     });
-</script>
 
-<script>
     function openItems(sectionId) {
     var i, cardContainer, navLinks;
     cardContainer = document.getElementsByClassName("card-container");
@@ -85,6 +83,33 @@ function scrollToSection(sectionId) {
     const section = document.getElementById(sectionId);
     section.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
+    // Kunin ang element ng "Sign Up" button
+    var signUpButton = document.getElementById('signUp');
+
+    // Kunin ang mga form ng login at sign up
+    var loginForm = document.getElementById('loginForm');
+    var signUpForm = document.getElementById('signupForm');
+
+    // I-set ang default visibility ng sign up form na hidden
+    signUpForm.style.display = 'none';
+
+    // Magdagdag ng event listener sa "Sign Up" button
+    signUpButton.addEventListener('click', function() {
+        // I-toggle ang pagpapakita at pagkubli ng login at sign up form
+        if (loginForm.style.display !== 'none') {
+            loginForm.style.display = 'none';
+            signUpForm.style.display = 'block';
+        } else {
+            loginForm.style.display = 'block';
+            signUpForm.style.display = 'none';
+        }
+    });
+
+    document.getElementById('signUp').addEventListener('click', function(event) {
+        event.preventDefault();
+        document.getElementById('loginForm').style.display = 'none';
+        document.getElementById('signupForm').style.display = 'block';
+    });
 
     // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};

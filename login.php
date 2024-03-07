@@ -79,28 +79,3 @@
     </form>
 </div>
 </div>
-
-<script>
-    // Kunin ang element ng "Sign Up" button
-var signUpButton = document.getElementById('signUp');
-
-// Kunin ang mga form ng login at sign up
-var loginForm = document.getElementById('loginForm');
-var signUpForm = document.getElementById('signupForm');
-
-// I-set ang default visibility ng sign up form na hidden
-signUpForm.style.display = 'none';
-
-// Magdagdag ng event listener sa "Sign Up" button
-signUpButton.addEventListener('click', function() {
-    // I-toggle ang pagpapakita at pagkubli ng login at sign up form
-    if (loginForm.style.display !== 'none') {
-        loginForm.style.display = 'none';
-        signUpForm.style.display = 'block';
-    } else {
-        loginForm.style.display = 'block';
-        signUpForm.style.display = 'none';
-    }
-});
-
-</script>
