@@ -30,7 +30,7 @@
         <div class="login-signup">Don't have an account? <a href="#" id="signUp">Sign Up</a></div>
         <p class="mt-5 mb-3 text-body-secondary">&copy; 2017–2023</p>
     </form>
-    <form name="regForm" class="signup-form" id="signupForm">
+    <form name="regForm" class="signup-form" id="signupForm" style="display: none;">
         <!--<img class="mb-4" src="logo.png" alt="">-->
         <h1 class="h3 mb-3 fw-normal">Please sign up</h1>
 
