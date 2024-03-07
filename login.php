@@ -30,7 +30,6 @@
         <div class="login-signup">Don't have an account? <a href="#" id="signUp">Sign Up</a></div>
         <p class="mt-5 mb-3 text-body-secondary">&copy; 2017–2023</p>
     </form>
-    <div id="signupContainer" style="display: none;">
     <form name="regForm" class="signup-form" id="signupForm">
         <!--<img class="mb-4" src="logo.png" alt="">-->
         <h1 class="h3 mb-3 fw-normal">Please sign up</h1>
@@ -77,5 +76,4 @@
         <button class="btn btn-primary w-100 py-2 mt-3" type="submit" id="onRegister">Register</button>
         <div class="login-signup">Already have an account? <a href="#" id="logIn">Login</a></div>
     </form>
-</div>
 </div>

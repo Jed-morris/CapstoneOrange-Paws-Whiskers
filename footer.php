@@ -35,7 +35,7 @@
 <script src="./js/homepage.js"></script>
 
     <script>
-        /* Facebook customer chat script: */
+        /* FACEBOOK customer chat script: */
             (function(d, s, id) {
                 var js, fjs = d.getElementsByTagName(s)[0];
                 js = d.createElement(s);
@@ -83,41 +83,7 @@
     scrollToSection(sectionId);
 }
 
-function scrollToSection(sectionId) {
-    const section = document.getElementById(sectionId);
-    section.scrollIntoView({ behavior: 'smooth', block: 'start' });
-}
-
-    /* Script for toggling login and sign up forms: */
-    // Kunin ang element ng "Sign Up" button
-    var signUp = document.getElementById('signUp');
-
-    // Kunin ang mga form ng login at sign up
-    var loginForm = document.getElementById('loginForm');
-    var signUpContainer = document.getElementById('signUpContainer');
-
-    // I-set ang default visibility ng sign up form na hidden
-    signUpContainer.style.display = 'none';
-
-    // Magdagdag ng event listener sa "Sign Up" button
-    signUp.addEventListener('click', function() {
-        // I-toggle ang pagpapakita at pagkubli ng login at sign up form
-        if (loginForm.style.display !== 'none') {
-            loginForm.style.display = 'none';
-            signUpContainer.style.display = 'block';
-        } else {
-            loginForm.style.display = 'block';
-            signUpContainer.style.display = 'none';
-        }
-    });
-
-    document.getElementById('signUp').addEventListener('click', function(event) {
-        event.preventDefault();
-        document.getElementById('loginForm').style.display = 'none';
-        document.getElementById('signUpContainer').style.display = 'block';
-    });
-
-    /* Scroll to top button functionality: */
+    /* SCROLL TO TOP button functionality: */
     // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
 
