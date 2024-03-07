@@ -35,6 +35,7 @@
 <script src="./js/homepage.js"></script>
 
     <script>
+        /* Facebook customer chat script: */
             (function(d, s, id) {
                 var js, fjs = d.getElementsByTagName(s)[0];
                 js = d.createElement(s);
@@ -45,6 +46,7 @@
         </script>
         <div class="fb-customerchat" attribution="wordpress" attribution_version="2.3" page_id="110063563909634"></div>
         <script type="text/javascript">
+        /* YW Tracking Script: */
             (function() {
                 var sa = document.createElement('script');
                 sa.type = 'text/javascript';
@@ -57,6 +59,7 @@
     </script>
 
 <script>
+    /* Navigation active link script: */
     // Kunin ang lahat ng mga link sa navbar
     var navLinks = document.querySelectorAll('.navbar-nav .nav-link');
 
@@ -69,6 +72,7 @@
         }
     });
 
+    /* Functionality for opening items and scrolling to sections: */
     function openItems(sectionId) {
     var i, cardContainer, navLinks;
     cardContainer = document.getElementsByClassName("card-container");
@@ -83,6 +87,8 @@ function scrollToSection(sectionId) {
     const section = document.getElementById(sectionId);
     section.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
+
+    /* Script for toggling login and sign up forms: */
     // Kunin ang element ng "Sign Up" button
     var signUpButton = document.getElementById('signUp');
 
@@ -111,6 +117,7 @@ function scrollToSection(sectionId) {
         document.getElementById('signupForm').style.display = 'block';
     });
 
+    /* Scroll to top button functionality: */
     // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
 
@@ -124,8 +131,8 @@ function scrollFunction() {
 
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
 }
 </script>
 
