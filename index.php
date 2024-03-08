@@ -42,8 +42,8 @@
 
     <main>
 
-    <section class="card-container" id="dry_dogfood"></section>
-    <section class="card-container" id="wet_dogfood"></section>
+    <section class="card-container" id="dry_dogfood"><?php include('dry_dog_food.php'); ?></section>
+    <section class="card-container" id="wet_dogfood"><?php include('wet_dog_food.php'); ?></section>
     <section class="card-container" id="login"><?php include('login.php'); ?></section>
        
     <div class="container-fluid pb-4">
