@@ -40,9 +40,10 @@
     </nav>
 </header>
 
-    <main>
-        
-    <section class="card-container" id="login"><?php include('login.php'); ?></section>
+<main>
+    <div class="container">        
+        <section class="card-container" id="login"><?php include('login.php'); ?></section>                
+    </div>
        
     <div class="container-fluid pb-4">
         <!-- Carousel -->
@@ -160,8 +161,6 @@
                 </div>
             </div>
         </div>
-    </div>
-</div>
 </main>
 
 <footer class="footer">

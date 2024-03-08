@@ -1,10 +1,9 @@
 <?php include('header.php')?>
 
-    <main>
-
-    <section class="card-container" id="dry_dogfood"></section>
-    <section class="card-container" id="wet_dogfood"></section>
-    <section class="card-container" id="login"><?php include('login.php'); ?></section>
+<main>
+    <div class="container">        
+        <section class="card-container" id="login"><?php include('login.php'); ?></section>                
+    </div>
 
         <article class="container">
             <div class="row">
@@ -77,7 +76,6 @@
                 </div>
             </div>
         </article>
-     
-    </main>
+</main>
 
 <?php include('footer.php')?>

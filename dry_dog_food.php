@@ -41,11 +41,10 @@
 </header>
 
 <main>
-    
-    <section class="card-container" id="dry_dogfood"></section>
-    <section class="card-container" id="wet_dogfood"></section>
-    <section class="card-container" id="login"><?php include('login.php'); ?></section>
-
+    <div class="container">
+        <h2>Dry Dog Food</h2>                
+        <section class="card-container" id="login"><?php include('login.php'); ?></section>                
+    </div>
 </main>
 
 <?php include('footer.php')?>
