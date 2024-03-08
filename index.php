@@ -42,6 +42,9 @@
 
     <main>
     <div class="container-fluid pb-4">
+        <!----Login Form---->
+        <section class="card-container" id="login"><?php include('login.php'); ?></section>
+
         <!-- Carousel -->
         <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
 
@@ -87,10 +90,7 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
-        </div>
-
-        <!----Login Form---->
-        <section class="card-container" id="login"><?php include('login.php'); ?></section>    
+        </div>    
     </div>
 
         <section class="jumbotron text-center">
