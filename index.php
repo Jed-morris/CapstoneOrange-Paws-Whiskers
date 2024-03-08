@@ -33,7 +33,7 @@
                 <div class="fas fa-search ms-3" id="search-btn"></div>
                     <div class="fas fa-shopping-cart ms-3" id="cart-btn"></div>
                         <span>0</span>
-                    <div class="fas fa-user ms-3" id="login-btn" onclick="openItems('login')">Login</div>
+                    <div class="fas fa-user ms-3" id="login-btn">Login</div>
                 </div>
             </div>
         </div>
@@ -41,11 +41,7 @@
 </header>
 
     <main>
-    <div class="container">
-        <!----Login Form---->
-        <section class="card-container" id="login"><?php include('login.php'); ?></section>
-    </div>
-
+        
     <div class="container-fluid pb-4">
         <!-- Carousel -->
         <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
