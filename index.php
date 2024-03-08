@@ -41,10 +41,12 @@
 </header>
 
     <main>
-    <div class="container-fluid pb-4">
+    <div class="container">
         <!----Login Form---->
         <section class="card-container" id="login"><?php include('login.php'); ?></section>
+    </div>
 
+    <div class="container-fluid pb-4">
         <!-- Carousel -->
         <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
 
