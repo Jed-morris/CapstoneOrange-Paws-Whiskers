@@ -34,7 +34,7 @@
                     <div class="fas fa-shopping-cart ms-3" id="cart-btn"></div>
                         <span>0</span>
                 </div>
-                <button class="nav-link text-light btn btn-outline-light" onclick="window.location.href='login.php'">Login</button>
+                <button class="nav-link text-light btn btn-outline-light" href='login.php'>Login</button>
             </div>
         </div>
     </nav>
@@ -191,15 +191,13 @@
     </div>
 </footer>
 
-    <button onclick="topFunction()" id="scrollToTopBtn" title="Go to top">Top</button>
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="./js/homepage.js"></script>
 
-    <script>
-        /* FACEBOOK customer chat script: */
+<script>
+    /* FACEBOOK customer chat script: */
             (function(d, s, id) {
                 var js, fjs = d.getElementsByTagName(s)[0];
                 js = d.createElement(s);
@@ -220,7 +218,7 @@
                 s.parentNode.insertBefore(sa, s);
             }
             )();
-    </script>
+</script>
 
 <script>
     function openItems(x) {
@@ -233,25 +231,7 @@
     }
     // Get the element with id="defaultOpen" and click on it
     document.getElementById("defaultOpen").click();
-
-    /* SCROLL TO TOP button functionality: */
-    // When the user scrolls down 20px from the top of the document, show the button
-    window.onscroll = function() {scrollFunction()};
-
-    function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("scrollToTopBtn").style.display = "block";
-    } else {
-        document.getElementById("scrollToTopBtn").style.display = "none";
-    }
-    }
-
-    // When the user clicks on the button, scroll to the top of the document
-    function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-    }
+    
 </script>
 </body>
-
 </html>
