@@ -4,7 +4,7 @@ if (isset($_POST['uname']) && //Used to determine whether a var is set or declar
     isset($_POST['email']) &&
     isset($_POST['pass'])) {
         
-        include "db_conn1.php";
+        include "db_conn.php";
         $uname = $_POST['uname'];
         $email = $_POST['email'];
         $pass = $_POST['pass'];
