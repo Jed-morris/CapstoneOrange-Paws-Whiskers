@@ -40,16 +40,10 @@
     </nav>
 </header>
 
-<main>
-    <div class="item-list position-absolute">
-        <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-    <section class="card-container" id="dry_dogfood"></section>
-    <section class="card-container" id="wet_dogfood"></section>
+    <main>
+        
     <section class="card-container" id="login"><?php include('login.php'); ?></section>
-            </div>
-        </div>
+       
     <div class="container-fluid pb-4">
         <!-- Carousel -->
         <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
@@ -167,8 +161,6 @@
             </div>
         </div>
     </div>
-</div>
-</div>
 </div>
 </main>
 
