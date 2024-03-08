@@ -34,7 +34,7 @@
                         <h2 class="text-center">Log In</h2>   
                         <hr>                 
 
-                          <form action="signin2.php" method="post">
+                          <form action="signin1.php" method="post">
                             
                             <div class="mb-3">
                                 <label for="username" class="form-label">Username</label>
