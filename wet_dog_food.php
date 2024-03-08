@@ -12,10 +12,6 @@
 
     <section class="card-container" id="wet_dogfood"></section>
 
-    <!-- Login Form -->
-    <section class="card-container" id="login">
-        <?php include('login.php'); ?>
-    </section>
 </main>
 
 <?php include('footer.php')?>

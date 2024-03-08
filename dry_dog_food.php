@@ -34,24 +34,15 @@
                     <div class="fas fa-shopping-cart ms-3" id="cart-btn"></div>
                         <span>0</span>
                         </div>
-                    <button class="nav-link text-light btn btn-outline-light" onclick="window.location.href='login.php'">Login</button>
+                    <button class="nav-link text-light btn btn-outline-light" onclick="openItems('login.php')">Login</button>
             </div>
         </div>
     </nav>
 </header>
 
 <main>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <h2>Dry Dog Food</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            
-            <section class="card-container" id="dry_dogfood"></section>
-
-            </div>
-        </div>
-    </div>
+    
+    <section class="card-container" id="dry_dogfood"></section>
 
 </main>
 
