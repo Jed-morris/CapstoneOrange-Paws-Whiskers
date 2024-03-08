@@ -1,98 +1,54 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paws and Whiskers- Home(OrangeHost)</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body class="bg-body-tertiary">
-<header class="h-auto">
-    <nav class="navbar navbar-expand-md fixed-top">
-        <div class="container">
-            <a class="navbar-brand text-light" href="index.php" onclick="openItems('main')"><i class="fas fa-paw"></i> Paws and Whiskers <i class="fas fa-cat"></i></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item">
-                        <a class="nav-link text-light" href="index.php">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light" href="dry_dog_food.php" onclick="openItems('dry_dogfood')">Dry Dog Food</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light" href="wet_dog_food.php" onclick="openItems('wet_dogfood')">Wet Dog Food</a>
-                    </li>
-                </ul>
-            <div class="nav-icons text-light">
-                <div class="fas fa-search ms-3" id="search-btn"></div>
-                    <div class="fas fa-shopping-cart ms-3" id="cart-btn"></div>
-                        <span>0</span>
-                </div>
-                <button class="nav-link text-light btn btn-outline-light" id="login-btn" onclick="openItems('login')">Login</button>
-            </div>
-        </div>
-    </nav>
-</header>
+<?php include('header.php')?>
 
-<main>
-    <div class="container">        
-        <section class="card-container" id="login"><?php include('login.php'); ?></section>                
-    </div>
-       
+    <main>
     <div class="container-fluid pb-4">
-        <!-- Carousel -->
-        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <!-- Carousel -->
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
 
-            <!-- Indicator/dots  -->
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></button>
-                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"></button>
-                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"></button>
-                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3"></button>
-                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4"></button>
-                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="5"></button>
-            </div>
-
-            <!--The slideshow/carousel -->
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="img/dogs1.1.jpg" alt="dog1" class="d-block" style="width: 100%;">
-                </div>
-                <div class="carousel-item">
-                    <img src="img/cats1.1.jpg" alt="cat1" class="d-block" style="width: 100%;">
-                </div>
-                <div class="carousel-item">
-                    <img src="img/dogs1.2.jpg" alt="dog2" class="d-block" style="width: 100%;">
-                </div>
-                <div class="carousel-item">
-                    <img src="img/cats1.2.jpg" alt="cat2" class="d-block" style="width: 100%;">
-                </div>
-                <div class="carousel-item">
-                    <img src="img/dogs1.3.jpg" alt="dog3" class="d-block" style="width: 100%;">
-                </div>
-                <div class="carousel-item">
-                    <img src="img/cats1.3.jpg" alt="cat3" class="d-block" style="width: 100%;">
-                </div>   
-            </div>
-
-            <!-- Left and right controls/icons -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-
-            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>    
+    <!-- Indicator/dots  -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="5"></button>
     </div>
+
+    <!--The slideshow/carousel -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/dogs1.1.jpg" alt="dog1" class="d-block" style="width: 100%;">
+          </div>
+          <div class="carousel-item">
+            <img src="img/cats1.1.jpg" alt="cat1" class="d-block" style="width: 100%;">
+          </div>
+          <div class="carousel-item">
+            <img src="img/dogs1.2.jpg" alt="dog2" class="d-block" style="width: 100%;">
+          </div>
+          <div class="carousel-item">
+            <img src="img/cats1.2.jpg" alt="cat2" class="d-block" style="width: 100%;">
+          </div>
+          <div class="carousel-item">
+            <img src="img/dogs1.3.jpg" alt="dog3" class="d-block" style="width: 100%;">
+          </div>
+          <div class="carousel-item">
+            <img src="img/cats1.3.jpg" alt="cat3" class="d-block" style="width: 100%;">
+          </div>   
+      </div>
+
+    <!-- Left and right controls/icons -->
+<button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+</button>
+  </div>
+</div>
+
 
         <section class="jumbotron text-center">
             <div class="container">
@@ -101,6 +57,9 @@
                 <a href="#" class="btn btn-primary">Know more</a>
             </div>
         </section>
+
+        <!----Login Form---->
+        <section class="card-container" id="login"><?php include('login.php'); ?></section>
 
 
 <section class="container-fluid" style="padding-top: 50px; padding-bottom: 50px;">
@@ -161,78 +120,8 @@
                 </div>
             </div>
         </div>
+    </div>
+</div>
 </main>
 
-<footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h3>Paws and Whiskers</h3>
-                    <p>Supplies for your furr babies</p>
-                    <div class="share">
-                        <a href="https://www.facebook.com/pawsandwhiskers12" class="fab fa-facebook-f"></a>
-                        <a href="https://twitter.com/" class="fab fa-twitter"></a>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <h3>Contact Info</h3>
-                    <a href="https://mail.google.com/" class="links"> <i class="fas fa-envelope"></i></a>
-                    <a href="https://maps.google.com/" class="links"> <i class="fas fa-map-marker-alt"></i></a>
-                </div>
-                <div class="col-md-4">
-                    <h3>Quick Links</h3>
-                    <a href="about_us.php" class="links">About us</a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                <div class="credit">Made with ♥ by Paws and Whiskers | All Rights Reserved 2024</div>
-            </div>
-        </div>
-    </div>
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-<script src="./js/homepage.js"></script>
-
-<script>
-    /* FACEBOOK customer chat script: */
-            (function(d, s, id) {
-                var js, fjs = d.getElementsByTagName(s)[0];
-                js = d.createElement(s);
-                js.id = id;
-                js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js#xfbml=1&version=v6.0&autoLogAppEvents=1'
-                fjs.parentNode.insertBefore(js, fjs);
-            }(document, 'script', 'facebook-jssdk'));
-        </script>
-        <div class="fb-customerchat" attribution="wordpress" attribution_version="2.3" page_id="110063563909634"></div>
-        <script type="text/javascript">
-        /* YW Tracking Script: */
-            (function() {
-                var sa = document.createElement('script');
-                sa.type = 'text/javascript';
-                sa.async = true;
-                sa.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.ywxi.net/js/1.js';
-                var s = document.getElementsByTagName('script')[0];
-                s.parentNode.insertBefore(sa, s);
-            }
-            )();
-</script>
-
-<script>
-    function openItems(x) {
-        var i, cardContainer, navLinks;
-        cardContainer = document.getElementsByClassName("card-container");
-        for (i = 0; i < cardContainer.length; i++) {
-            cardContainer[i].style.display = "none";
-        }
-        document.getElementById(x).style.display = "grid";
-    }
-    // Get the element with id="defaultOpen" and click on it
-    document.getElementById("defaultOpen").click();
-    
-</script>
-</body>
-</html>
+<?php include('footer.php')?>

@@ -1,4 +1,4 @@
-<<footer class="footer">
+<footer class="footer">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
@@ -27,13 +27,14 @@
     </div>
 </footer>
 
-script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <button onclick="topFunction()" id="scrollToTopBtn" title="Go to top">Top</button>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="./js/homepage.js"></script>
 
-<script>
-    /* FACEBOOK customer chat script: */
+    <script>
             (function(d, s, id) {
                 var js, fjs = d.getElementsByTagName(s)[0];
                 js = d.createElement(s);
@@ -44,7 +45,6 @@ script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundl
         </script>
         <div class="fb-customerchat" attribution="wordpress" attribution_version="2.3" page_id="110063563909634"></div>
         <script type="text/javascript">
-        /* YW Tracking Script: */
             (function() {
                 var sa = document.createElement('script');
                 sa.type = 'text/javascript';
@@ -54,20 +54,55 @@ script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundl
                 s.parentNode.insertBefore(sa, s);
             }
             )();
+    </script>
+
+<script>
+    // Kunin ang lahat ng mga link sa navbar
+    var navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+
+    // Iterasyon sa bawat link
+    navLinks.forEach(function(navLink) {
+        // I-check kung ang URL ng link ay katulad ng kasalukuyang URL
+        if (navLink.href === window.location.href) {
+            // Kung oo, idagdag ang class "active"
+            navLink.parentNode.classList.add('active');
+        }
+    });
 </script>
 
 <script>
-    function openItems(x) {
-        var i, cardContainer, navLinks;
-        cardContainer = document.getElementsByClassName("card-container");
-        for (i = 0; i < cardContainer.length; i++) {
-            cardContainer[i].style.display = "none";
-        }
-        document.getElementById(x).style.display = "grid";
+    function openItems(sectionId) {
+    var i, cardContainer, navLinks;
+    cardContainer = document.getElementsByClassName("card-container");
+    for (i = 0; i < cardContainer.length; i++) {
+        cardContainer[i].style.display = "none";
     }
-    // Get the element with id="defaultOpen" and click on it
-    document.getElementById("defaultOpen").click();
-    
+    document.getElementById(sectionId).style.display = "grid";
+    scrollToSection(sectionId);
+}
+
+function scrollToSection(sectionId) {
+    const section = document.getElementById(sectionId);
+    section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+    // When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("scrollToTopBtn").style.display = "block";
+  } else {
+    document.getElementById("scrollToTopBtn").style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
 </script>
+
 </body>
 </html>

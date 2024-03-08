@@ -1,9 +1,93 @@
 <?php include('header.php')?>
 
-<main>
-    <div class="container">        
-        <section class="card-container" id="login"><?php include('login.php'); ?></section>                
-    </div>
+
+<style>
+/* Container styles */
+.container {
+    margin-top: 50px;
+}
+
+/* Section headings */
+h2, h3 {
+    color: #333;
+    font-weight: bold;
+}
+
+/* Introduction paragraph */
+p {
+    color: #444;
+    line-height: 1.6;
+}
+
+/* Team members list */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+/* Team member names */
+strong {
+    color: #333;
+}
+
+/* Values list */
+ul {
+    margin-top: 10px;
+}
+
+/* Pet care tips list */
+ul {
+    margin-top: 10px;
+}
+
+/* Testimonials blockquote */
+blockquote {
+    font-style: italic;
+    color: #777;
+}
+
+/* Testimonials cite */
+cite {
+    display: block;
+    text-align: right;
+    color: #555;
+}
+
+/* Contact information */
+p {
+    margin-bottom: 5px;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    /* Adjustments for smaller screens */
+    .container {
+        margin-top: 30px;
+    }
+
+    h2, h3 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    blockquote {
+        font-size: 14px;
+    }
+
+    cite {
+        font-size: 12px;
+    }
+}       
+    </style>
+
+    <main>
+        <!----Login Form---->
+        <section class="card-container" id="login">
+            <?php include('login.php'); ?>
+        </section>
 
         <article class="container">
             <div class="row">
@@ -76,6 +160,7 @@
                 </div>
             </div>
         </article>
-</main>
+     
+    </main>
 
-<?php include('footer.php')?>
+<?php include('footer.php') ?>
