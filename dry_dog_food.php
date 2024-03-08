@@ -34,7 +34,7 @@
                     <div class="fas fa-shopping-cart ms-3" id="cart-btn"></div>
                         <span>0</span>
                         </div>
-                    <button class="nav-link text-light btn btn-outline-light" href='login.php'>Login</button>
+                    <button class="nav-link text-light btn btn-outline-light" href="login.php">Login</button>
             </div>
         </div>
     </nav>
