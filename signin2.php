@@ -15,11 +15,11 @@ if (isset ($_POST['uname']) &&
 
     if (empty($uname)) {
         $em = "Username is required";
-        header("Location:login1.php?error=$em&$data");
+        header("Location:signin.php?error=$em&$data");
         exit;
     } else if (empty($pass)) {
         $em = "password is required";
-        header("Location:login1.php?error=$em&$data");
+        header("Location:signin.php?error=$em&$data");
         exit;
     } else {
         $sql = "SELECT * FROM login_signup WHERE Username= ?";
@@ -45,7 +45,7 @@ if (isset ($_POST['uname']) &&
                 exit;
         } else {
                 $em ="incorrect username or password";
-                header("Location: login1.php?error=$em&$data");
+                header("Location: signin.php?error=$em&$data");
                 exit;
         }
     }

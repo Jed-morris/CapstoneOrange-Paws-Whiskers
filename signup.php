@@ -53,7 +53,7 @@
                         </div>
                     </form>
                     <hr>
-                    <p class="text-center">Already have an account? <a href="login1.php">Log in</a></p>
+                    <p class="text-center">Already have an account? <a href="signin.php">Log in</a></p>
                 </div>
             </div>
         </div>

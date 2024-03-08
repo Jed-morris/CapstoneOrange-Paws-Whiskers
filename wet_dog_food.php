@@ -119,43 +119,35 @@
     </script>
 
 <script>
-function openItems(x) {
-    var i, cardContainer, navLinks;
-    cardContainer = document.getElementsByClassName("card-container");
-    for (i = 0; i < cardContainer.length; i++) {
-        if (cardContainer[i].id !== 'login') {
+    function openItems(x) {
+        var i, cardContainer, navLinks;
+        cardContainer = document.getElementsByClassName("card-container");
+        for (i = 0; i < cardContainer.length; i++) {
             cardContainer[i].style.display = "none";
         }
+        document.getElementById(x).style.display = "grid";
     }
-    document.getElementById(x).style.display = "grid";
-}
-
-document.getElementById('signUp').addEventListener('click', function() {
-    var signUpForm = document.getElementById('signupForm');
-    signUpForm.style.display = signUpForm.style.display === 'none' ? 'block' : 'none';
-});
-
     // Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
+    document.getElementById("defaultOpen").click();
 
-/* SCROLL TO TOP button functionality: */
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+    /* SCROLL TO TOP button functionality: */
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.getElementById("scrollToTopBtn").style.display = "block";
-  } else {
-    document.getElementById("scrollToTopBtn").style.display = "none";
-  }
-}
+    function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("scrollToTopBtn").style.display = "block";
+    } else {
+        document.getElementById("scrollToTopBtn").style.display = "none";
+    }
+    }
 
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+    }
 </script>
-
 </body>
+
 </html>
