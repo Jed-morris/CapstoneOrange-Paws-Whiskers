@@ -1,6 +1,11 @@
 <?php include('header.php')?>
 
     <main>
+
+    <section class="card-container" id="dry_dogfood"></section>
+    <section class="card-container" id="wet_dogfood"></section>
+    <section class="card-container" id="login"><?php include('login.php'); ?></section>
+
         <article class="container">
             <div class="row">
                 <div class="col-md-8">

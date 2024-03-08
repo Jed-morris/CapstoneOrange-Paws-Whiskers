@@ -34,14 +34,18 @@
                     <div class="fas fa-shopping-cart ms-3" id="cart-btn"></div>
                         <span>0</span>
                 </div>
-                <button class="nav-link text-light btn btn-outline-light" onclick="openItems('login.php')">Login</button>
+                <button class="nav-link text-light btn btn-outline-light" id="login-btn" onclick="openItems('login')">Login</button>
             </div>
         </div>
     </nav>
 </header>
 
     <main>
-        
+
+    <section class="card-container" id="dry_dogfood"></section>
+    <section class="card-container" id="wet_dogfood"></section>
+    <section class="card-container" id="login"><?php include('login.php'); ?></section>
+       
     <div class="container-fluid pb-4">
         <!-- Carousel -->
         <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
