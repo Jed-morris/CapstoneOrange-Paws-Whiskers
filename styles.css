@@ -206,20 +206,9 @@ main {
     justify-content: center;
 }
 
-
 .item-list {
     width: 100%;
     margin-top: 3rem;
-}
-
-
-/* Eto ung sa mga PRODUCTS */
-.card-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-    margin-top: 35px; /* Add space at the top */
-    margin-bottom: 20px; /* Add space at the bottom */
 }
 
 .card-product {
@@ -338,72 +327,65 @@ main {
     background-color: #555;
   }
   
-@media (min-width: 768px) {
-    .card {
-        margin-bottom: 20px; /* Add margin between each card for medium screens and larger */
-    }
+/* Jumbotron */
+.jumbotron {
+    padding: 2rem 1rem; /* Bawasan ang padding sa jumbotron para magmukhang mas maayos sa mobile screen */
 }
 
-@media (max-width: 767.98px) {
-    .card {
-        margin-bottom: 10px; /* Adjust margin between each card for smaller screens */
-    }
-}
-
-/* Media query para sa screen sizes ng mobile */
-@media (max-width: 767px) {
-    /* Carousel */
-    .carousel-item img {
-        max-width: 100%; /* Gawing responsive ang mga larawan sa carousel */
-        height: auto;
-    }
-
-    /* Jumbotron */
-    .jumbotron {
-        padding: 2rem 1rem; /* Bawasan ang padding sa jumbotron para magmukhang mas maayos sa mobile screen */
-    }
-
-
-    /* Card-Trivia at Card-Care */
-    .card-trivia,
-    .card-care {
-        margin-bottom: 10px; /* Bawasan ang spacing sa pagitan ng dalawang card */
-    }
+/* Card-Trivia at Card-Care */
+.card-trivia,
+.card-care {
+    margin-bottom: 10px; /* Bawasan ang spacing sa pagitan ng dalawang card */
 }
 
 /* Media query para sa tablet screens */
 @media (max-width: 768px) {
     .jumbotron {
-        padding: 2rem 1rem; /* Palakihin ang padding */
+        padding: 2rem; /* Pagpalit sa padding para hindi masyadong malaki */
     }
 
     .card-trivia,
     .card-care {
         margin-bottom: 20px; /* Dagdagan ang space sa pagitan ng mga card */
     }
+
+    #product-cards {
+        width: 50%; /* Set the width to 50% for better layout */
+    }
 }
 
 /* Media query para sa mobile screens */
 @media (max-width: 576px) {
     .jumbotron {
-        background-size: contain; /* Baguhin ang background size */
-        height: auto; /* Palitan ang height sa auto para sa natural na taas ng laman */
-        padding-top: 20px; /* Bawasan ang padding sa taas */
-        padding-bottom: 20px; /* Bawasan ang padding sa ibaba */
-        margin: 10px; /* Bawasan ang margin */
+        padding: 1rem; /* Pagpalit sa padding para hindi masyadong malaki */
         text-align: center; /* I-center ang text */
-        align-items: center; /* I-center ang mga item */
+        background-size: cover; /* Baguhin ang background size */
+    }
+
+    .card-trivia,
+    .card-care {
+        margin-bottom: 10px; /* Dagdagan ang space sa pagitan ng mga card */
+    }
+
+    #product-cards {
+        display: inline-block; /* Ipakita ang mga product cards ng paisa-isa lang */
+        width: 100%; /* Pumili ng 100% na lapad para isang card lamang ang maipakita sa isang hilera */
+        margin-bottom: 10px; /* Dagdagan ang space sa pagitan ng mga card */
     }
 }
 
-@media (max-width: 768px) {
-    #product-cards {
-        width: 50%;
+/* Media query para sa pinakamaliit na screens */
+@media (max-width: 375px) {
+    .jumbotron {
+        padding: 0.5rem; /* Pagpalit sa padding para hindi masyadong malaki */
     }
-}
 
-@media (max-width: 576px) {
+    .card-trivia,
+    .card-care {
+        margin-bottom: 10px; /* Dagdagan ang space sa pagitan ng mga card */
+    }
+
     #product-cards {
-        width: 100%;
+        display: none; /* Itago ang mga product cards */
     }
 }
