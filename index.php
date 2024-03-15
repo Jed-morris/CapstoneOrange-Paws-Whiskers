@@ -22,13 +22,13 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="./" style="<?php echo $page == 'home' ? 'color: green;' : ''; ?>">Home</a>
+                          <a class="nav-link text-light" href="./">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="shop.php" style="<?php echo $page == 'shop' ? 'color: green;' : ''; ?>">Shop</a>
+                          <a class="nav-link text-light" href="shop.php">Shop</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="about_us.php" style="<?php echo $page == 'about_us' ? 'color: green;' : ''; ?>">About Us</a>
+                          <a class="nav-link text-light" href="about_us.php">About Us</a>
                         </li>
                     </ul>
                     <div class="nav-icons text-light">
@@ -219,6 +219,20 @@
                 s.parentNode.insertBefore(sa, s);
             }
             )();
+    </script>
+
+    <script>X
+    // Kunin ang lahat ng mga link sa navbar
+    var navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+
+    // Iterasyon sa bawat link
+    navLinks.forEach(function(navLink) {
+        // I-check kung ang URL ng link ay katulad ng kasalukuyang URL
+        if (navLink.href === window.location.href) {
+            // Kung oo, idagdag ang class "active"
+            navLink.parentNode.classList.add('active');
+        }
+    });
     </script>
 
 <script>
