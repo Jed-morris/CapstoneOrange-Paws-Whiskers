@@ -1,16 +1,12 @@
-// Kunin ang mga navbar links
-const homeLink = document.getElementById('home-link');
-const shopLink = document.getElementById('shop-link');
-const aboutUsLink = document.getElementById('about_us-link');
+// Kunin ang kasalukuyang URL ng pahina
+var currentUrl = window.location.href;
 
-// Check kung nasaang page ang user at i-highlight ang active link
-if (window.location.pathname === '/') {
-    homeLink.classList.add('active');
-} else if (window.location.pathname === '/shop.php') {
-    shopLink.classList.add('active');
-} else if (window.location.pathname === '/about_us.php') {
-    aboutUsLink.classList.add('active');
-}
+// Hanapin ang mga link sa navbar at itakda ang aktibo
+document.querySelectorAll('.navbar-nav .nav-link').forEach(function(link) {
+    if (link.href === currentUrl) {
+        link.classList.add('active');
+    }
+});
 
 /* Shopping Cart Section */
 if (document.readyState == 'loading'){
