@@ -58,7 +58,7 @@ main {
 
 .bn14 {
     background-color: rgb(24, 155, 52);
-    border: none;
+    border: 2px solid white;
     color: white;
     text-align: center;
     text-decoration: none;
@@ -80,7 +80,6 @@ main {
         transform: scale(1.1);
     }
 }
-
 
 .bn14:hover {
     background-color: #0056b3;
