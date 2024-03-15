@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paws and Whiskers- Home(OrangeHost)</title>
+    <title>Paws and Whiskers- Home</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
@@ -91,9 +91,9 @@
 
         <section class="jumbotron text-center">
             <div class="container">
-                <h1>Pawsome goods for your Furr Babies</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.</p>
-                <a href="#" class="btn btn-primary">Know more</a>
+                <h1></h1>
+                <p></p>
+                <a href="about_us.php" class="btn btn-primary">Know more</a>
             </div>
         </section>
 
