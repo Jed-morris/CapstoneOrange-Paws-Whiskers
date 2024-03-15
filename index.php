@@ -22,10 +22,13 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="./">Home</a>
+                        <a id="home-link" class="nav-link text-light" href="./">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="shop.php">Shop</a>
+                            <a id="shop-link"class="nav-link text-light" href="shop.php">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="about_us-link"class="nav-link text-light" href="about_us.php">About Us</a>
                         </li>
                     </ul>
                     <div class="nav-icons text-light">
@@ -236,6 +239,8 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 </script>
+
+<script src="script.js"></script>
 
 </body>
 </html>

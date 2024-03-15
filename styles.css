@@ -23,34 +23,27 @@ main {
     font-weight: bold;
 }
 
-.navbar-nav .nav-item {
-    margin-right: 15px;
-}
-
-.navbar-nav .nav-item.active .nav-link {
-    color: #ffffff !important; /* Kulay ng teksto */
-    background-color: #007bff !important; /* Kulay ng background */
-}
-
 .navbar-nav .nav-link {
     font-size: 1rem;
     font-weight: bold;
-}
-.navbar-item:hover {
-    color: lightseagreen;
+    color: white;
 }
 
-.nav-icons {
+.navbar-nav .nav-item.active .nav-link {
+    background-color: #007bff;
+}
+
+.navbar-icons {
     display: flex;
     align-items: center;
 }
 
-.nav-icons .fas {
+.navbar-icons .fas {
     font-size: 1.25rem;
     cursor: pointer;
 }
 
-.nav-icons span {
+.navbar-icons span {
     margin-left: 5px;
     margin-right: 10px;
     font-weight: bold;
