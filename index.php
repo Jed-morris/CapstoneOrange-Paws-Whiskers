@@ -28,7 +28,7 @@
                             <a class="nav-link text-light" href="shop.php">Shop</a>
                         </li>
                     </ul>
-                    <div class="nav-icons text-light me-4">
+                    <div class="nav-icons text-light me-5">
                         <a href="shop.php" style="color: mediumblue;">  <i style="margin-right: 1%;" class="fa-solid fa-cart-shopping justify-content-end fa-xl" ></i></a>
                         <div class="text-end">
                             <a href="login.php"><button class="bn14">Login</button></a>
