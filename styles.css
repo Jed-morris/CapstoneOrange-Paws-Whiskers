@@ -57,51 +57,36 @@ main {
 }
 
 .bn14 {
-    display: inline-block;
-    padding: 0.65em 1.6em;
-    border: 3px solid #ffffff;
-    margin: 0 0.3em 0.3em 0;
-    border-radius: 0.12em;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    color: #ffffff;
+    background-color: #007bff; /* Blue */
+    border: none;
+    color: white;
     text-align: center;
-    transition: all 0.2s;
-    animation: bn13bouncy 3s infinite linear;
-    position: relative;
-    background-color: #7c99ab;
-  }
-  
-  .bn14:hover {
-    background-color: white;
-    color: #91b4c8;
-  }
-  
-  @keyframes bn14bouncy {
-    0% {
-      top: 0em;
-    }
-    40% {
-      top: 0em;
-    }
-    43% {
-      top: -0.9em;
-    }
-    46% {
-      top: 0em;
-    }
-    48% {
-      top: -0.4em;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    padding: 10px 24px;
+    border-radius: 5px;
+}
+
+.bn14 {
+    animation: bn14bouncy 1s infinite;
+}
+
+@keyframes bn14bouncy {
+    0%, 100% {
+        transform: translateY(0);
     }
     50% {
-      top: 0em;
+        transform: translateY(-10px);
     }
-    100% {
-      top: 0em;
-    }
-  }
+}
+
+.bn14:hover {
+    background-color: #0056b3; /* Darker Blue */
+}
+
   .bn632-hover {
     width: 160px;
     font-size: 16px;
