@@ -350,7 +350,15 @@ main {
     }
 
     #product-cards {
-        width: 50%; /* Set the width to 50% for better layout */
+        display: flex; /* I-set ang display sa flex para maiayos ang pag-layout ng cards */
+        flex-wrap: wrap; /* I-wrap ang mga cards sa paglipat sa bagong hilera kung hindi kasya */
+        justify-content: space-between; /* I-space evenly ang mga cards sa loob ng kanilang container */
+    }
+
+    /* I-adjust ang lapad ng bawat card base sa laki ng screen */
+    .product-card {
+        width: calc(50% - 10px); /* Ang 10px na pagitan ayon sa margin */
+        margin-bottom: 20px; /* Dagdagan ang space sa pagitan ng mga card */
     }
 }
 
@@ -368,11 +376,29 @@ main {
     }
 
     #product-cards {
-        display: inline-block; /* Ipakita ang mga product cards ng paisa-isa lang */
-        width: 100%; /* Pumili ng 100% na lapad para isang card lamang ang maipakita sa isang hilera */
+        display: flex; /* I-set ang display sa flex */
+        flex-wrap: nowrap; /* Huwag mag-wrap ang mga cards, ito ang magpapakita ng isa-isang card */
+        overflow-x: auto; /* I-allow ang horizontal scrolling para sa mga cards na hindi kasya sa screen */
+        width: 100%; /* Pumili ng 100% na lapad para maging full-width */
         margin-bottom: 10px; /* Dagdagan ang space sa pagitan ng mga card */
+        -webkit-overflow-scrolling: touch; /* Para sa smooth scrolling sa iOS */
+        scroll-snap-type: x mandatory; /* I-set ang scroll-snap sa horizontal axis para sa smooth scrolling */
+    }
+
+    /* I-set ang lapad ng bawat card */
+    .product-card {
+        flex: 0 0 auto; /* I-set ang flex properties para hindi mag-expand ang mga cards */
+        width: calc(100% - 10px); /* Ang 10px na pagitan ayon sa margin */
+        margin-right: 10px; /* Dagdagan ang space sa kanan ng bawat card */
+        scroll-snap-align: start; /* I-align ang mga card sa start ng scroll */
+    }
+
+    /* I-adjust ang margin ng huling card para hindi magkaroon ng extra space */
+    #product-cards .product-card:last-child {
+        margin-right: 0; /* Walang margin sa kanan ng huling card */
     }
 }
+
 
 /* Media query para sa pinakamaliit na screens */
 @media (max-width: 375px) {
@@ -386,6 +412,25 @@ main {
     }
 
     #product-cards {
-        display: none; /* Itago ang mga product cards */
+        display: flex; /* I-set ang display sa flex */
+        flex-wrap: nowrap; /* Huwag mag-wrap ang mga cards, ito ang magpapakita ng isa-isang card */
+        overflow-x: auto; /* I-allow ang horizontal scrolling para sa mga cards na hindi kasya sa screen */
+        width: 100%; /* Pumili ng 100% na lapad para maging full-width */
+        margin-bottom: 10px; /* Dagdagan ang space sa pagitan ng mga card */
+        -webkit-overflow-scrolling: touch; /* Para sa smooth scrolling sa iOS */
+        scroll-snap-type: x mandatory; /* I-set ang scroll-snap sa horizontal axis para sa smooth scrolling */
+    }
+
+    /* I-set ang lapad ng bawat card */
+    .product-card {
+        flex: 0 0 auto; /* I-set ang flex properties para hindi mag-expand ang mga cards */
+        width: calc(100% - 10px); /* Ang 10px na pagitan ayon sa margin */
+        margin-right: 10px; /* Dagdagan ang space sa kanan ng bawat card */
+        scroll-snap-align: start; /* I-align ang mga card sa start ng scroll */
+    }
+
+    /* I-adjust ang margin ng huling card para hindi magkaroon ng extra space */
+    #product-cards .product-card:last-child {
+        margin-right: 0; /* Walang margin sa kanan ng huling card */
     }
 }
