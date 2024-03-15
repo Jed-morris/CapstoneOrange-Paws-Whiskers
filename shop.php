@@ -32,7 +32,7 @@
                     <div class="nav-icons text-light">
                         <a href="#shopping-cart" style="color: mediumblue;">  <i style="margin-right: 1%;" class="fa-solid fa-cart-shopping justify-content-end fa-xl" ></i></a>
                         <div class="text-end">
-                            <a href="login.php"><button class="bn14">Log In</button></a>
+                            <a href="login.php"><button class="bn14">Login</button></a>
                         </div>
                     </div>
                 </div>
