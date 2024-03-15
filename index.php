@@ -22,13 +22,13 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item">
-                        <a id="home-link" class="nav-link text-light" href="./">Home</a>
+                            <a class="nav-link text-light" href="./" style="<?php echo $page == 'home' ? 'color: green;' : ''; ?>">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a id="shop-link"class="nav-link text-light" href="shop.php">Shop</a>
+                            <a class="nav-link text-light" href="shop.php" style="<?php echo $page == 'shop' ? 'color: green;' : ''; ?>">Shop</a>
                         </li>
                         <li class="nav-item">
-                            <a id="about_us-link"class="nav-link text-light" href="about_us.php">About Us</a>
+                            <a class="nav-link text-light" href="about_us.php" style="<?php echo $page == 'about_us' ? 'color: green;' : ''; ?>">About Us</a>
                         </li>
                     </ul>
                     <div class="nav-icons text-light">

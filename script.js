@@ -1,13 +1,3 @@
-// Kunin ang kasalukuyang URL ng pahina
-var currentUrl = window.location.href;
-
-// Hanapin ang mga link sa navbar at itakda ang aktibo
-document.querySelectorAll('.navbar-nav .nav-link').forEach(function(link) {
-    if (link.href === currentUrl) {
-        link.classList.add('active');
-    }
-});
-
 /* Shopping Cart Section */
 if (document.readyState == 'loading'){
     document.addEventListener('DOMContentLoaded' , ready);
