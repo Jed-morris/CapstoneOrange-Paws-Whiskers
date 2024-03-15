@@ -68,7 +68,7 @@ main {
     cursor: pointer;
     padding: 10px 24px;
     border-radius: 5px;
-    animation: bn14bouncy 0.5s infinite alternate;
+    animation: bn14bouncy 2s infinite alternate;
     transition: all 0.4s ease-in-out;
 }
 
