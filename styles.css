@@ -356,7 +356,7 @@ main {
     }
 
     /* I-adjust ang lapad ng bawat card base sa laki ng screen */
-    .product-card {
+    #product-cards {
         width: calc(50% - 10px); /* Ang 10px na pagitan ayon sa margin */
         margin-bottom: 20px; /* Dagdagan ang space sa pagitan ng mga card */
     }
@@ -386,7 +386,7 @@ main {
     }
 
     /* I-set ang lapad ng bawat card */
-    .product-card {
+    #product-cards {
         flex: 0 0 auto; /* I-set ang flex properties para hindi mag-expand ang mga cards */
         width: calc(100% - 10px); /* Ang 10px na pagitan ayon sa margin */
         margin-right: 10px; /* Dagdagan ang space sa kanan ng bawat card */
@@ -394,7 +394,7 @@ main {
     }
 
     /* I-adjust ang margin ng huling card para hindi magkaroon ng extra space */
-    #product-cards .product-card:last-child {
+    #product-cards .product-cards:last-child {
         margin-right: 0; /* Walang margin sa kanan ng huling card */
     }
 }
@@ -422,7 +422,7 @@ main {
     }
 
     /* I-set ang lapad ng bawat card */
-    .product-card {
+    #product-cards {
         flex: 0 0 auto; /* I-set ang flex properties para hindi mag-expand ang mga cards */
         width: calc(100% - 10px); /* Ang 10px na pagitan ayon sa margin */
         margin-right: 10px; /* Dagdagan ang space sa kanan ng bawat card */
@@ -430,7 +430,7 @@ main {
     }
 
     /* I-adjust ang margin ng huling card para hindi magkaroon ng extra space */
-    #product-cards .product-card:last-child {
+    #product-cards .product-cards:last-child {
         margin-right: 0; /* Walang margin sa kanan ng huling card */
     }
 }
