@@ -372,7 +372,7 @@ main {
 
     .card-trivia,
     .card-care {
-        margin-bottom: 15px; /* Dagdagan ang space sa pagitan ng mga card */
+        margin-bottom: 30px; /* Dagdagan ang space sa pagitan ng mga card */
     }
 
     #product-cards {
@@ -406,7 +406,7 @@ main {
 
     .card-trivia,
     .card-care {
-        margin-bottom: 10px; /* Dagdagan ang space sa pagitan ng mga card */
+        margin-bottom: 50px; /* Dagdagan ang space sa pagitan ng mga card */
     }
 
     #product-cards {
