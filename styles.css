@@ -168,8 +168,8 @@ main {
     color: white; /* Set text color for the jumbotron */
 }
 
-/* Styling for the container */
-.container-fluid {
+/* Trivia cards */
+.card-container-fluid {
     background-color: #f8f9fa; /* Light gray background color */
     padding: 50px 0; /* Add some padding for spacing */
 }
@@ -180,8 +180,8 @@ main {
     border-radius: 10px; /* Rounded corners */
     margin-bottom: 20px; /* Add some space between cards */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
-    margin-left: 40px; /* Add margin to the left */
-    margin-right: 40px; /* Add margin to the right */
+    margin-left: 70px; /* Add margin to the left */
+    margin-right: 70px; /* Add margin to the right */
 }
 
 /* Ensure the cards have the same height */
@@ -203,7 +203,6 @@ main {
 .card-text {
     flex-grow: 1; /* Allow text to grow and fill the remaining space */
     font-size: 1rem; /* Regular font size for text */
-    justify-content: center;
 }
 
 .item-list {
