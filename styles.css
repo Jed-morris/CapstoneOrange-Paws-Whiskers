@@ -389,7 +389,7 @@ main {
     }
 
     .jumbotron {
-        padding: 2rem 1rem; /* Pagpalit sa padding para hindi masyadong malaki */
+        padding: 1rem; /* Pagpalit sa padding para hindi masyadong malaki */
         text-align: center; /* I-center ang text */
         background-size: cover; /* Baguhin ang background size */
     }
