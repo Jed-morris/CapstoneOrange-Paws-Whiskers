@@ -19,13 +19,16 @@
 
     .transparent-card {
     background-color: rgba(255, 255, 255, 0.7);
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 20px;
     }
     </style>
 </head>
 
 <body>    
 <div class="d-flex justify-content-center align-items-center vh-100">
-    <div class="card transparent-card" style="max-width: 500px;">
+    <div class="card transparent-card">
         <div class="card-body">
             <a href="index.php" class="btn btn-light d-flex justify-content-center align-items-center" style="width: 40px; height: 40px; border-radius: 50%;"><i class="fas fa-home fa-fw"></i></a>
             <h2 class="text-center">Log In</h2>
