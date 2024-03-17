@@ -338,7 +338,7 @@ main {
 }
 
 /* Media query para sa mga screens ng laptop */
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
     #product-cards .col {
         flex: 0 0 calc(25% - 20px); /* Ang 20px na pagitan ayon sa margin */
         margin-bottom: 20px; /* Dagdagan ang space sa pagitan ng mga card */
