@@ -43,6 +43,8 @@
         </nav>
     </header>
 
+<main>
+  <div class="container-fluid pb-4">
 <!-- Item Categories-->
 <section id="category">
   <div class="container-fluid">
@@ -189,6 +191,9 @@
     </div>
 
 </section>
+
+  </div>
+</main>
 
 <!--Footer-->
   <footer class="footer">

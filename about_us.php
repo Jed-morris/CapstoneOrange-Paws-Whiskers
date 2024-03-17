@@ -124,7 +124,7 @@ p {
     </header>
 
 <main>
-    <div class="container">
+    <div class="container-fluid pb-4">
         <article>
             <div class="row">
                 <div class="col-md-8">
