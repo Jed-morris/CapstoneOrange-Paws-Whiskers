@@ -371,6 +371,7 @@ main {
 
     .card-trivia,
     .card-care {
+        padding-top: 25px;
         margin-bottom: 20px; /* Dagdagan ang space sa pagitan ng mga card */
     }
 
@@ -398,6 +399,7 @@ main {
 
     .card-trivia,
     .card-care {
+        padding-top: 25px;
         margin-bottom: 30px; /* Dagdagan ang space sa pagitan ng mga card */
     }
 
@@ -428,9 +430,10 @@ main {
 @media (max-width: 425px) {
     .card-trivia,
     .card-care {
+        padding-top: 25px;
         margin-bottom: 30px; /* Dagdagan ang space sa pagitan ng mga card */
     }
-    
+
     /* I-adjust ang lapad ng bawat card */
     #product-cards .col {
         flex: 0 0 calc(100% - 10px); /* Ang 10px na pagitan ayon sa margin */
@@ -445,8 +448,8 @@ main {
 
     /* Dagdagan ng padding o margin ang carousel */
     .carousel {
-        margin-top: 10px; /* Dagdagan ng margin sa itaas */
-        margin-bottom: 10px; /* Dagdagan ng margin sa ibaba */
+        margin-top: 0; /* Dagdagan ng margin sa itaas */
+        margin-bottom: 5px; /* Dagdagan ng margin sa ibaba */
     }
 }
 
@@ -458,6 +461,7 @@ main {
 
     .card-trivia,
     .card-care {
+        padding-top: 25px;
         margin-bottom: 50px; /* Dagdagan ang space sa pagitan ng mga card */
     }
 
