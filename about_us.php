@@ -17,7 +17,7 @@
 }
 
 .container {
-    padding-top: 15px;
+    padding-top: 50px;
 }
 
 /* Section headings */
