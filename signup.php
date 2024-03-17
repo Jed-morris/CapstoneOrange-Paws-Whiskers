@@ -26,12 +26,19 @@
 
     @media (max-width: 576px) {
     .card.transparent-card {
-        max-width: 100%;
+        max-width: 85%;
     }
 
     .card.transparent-card .shadow {
-        width: 100%;
-        max-width: 100%;
+        width: 85%;
+        max-width: 85%;
+    }
+}
+
+    @media (max-width: 425px) {
+    .transparent-card {
+        max-width: 70%; /* o anumang sukat na nais mo */
+        margin: 0 auto; /* pahalagahan ang card sa gitna */
     }
 }
     </style>
