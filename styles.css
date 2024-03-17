@@ -428,6 +428,10 @@ main {
 
 /* Media query para sa mobile screens */
 @media (max-width: 425px) {
+    .h-auto {
+        padding-bottom: 20px;
+    }
+
     .card-trivia,
     .card-care {
         padding-top: 25px;
