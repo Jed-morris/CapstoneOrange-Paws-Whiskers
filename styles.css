@@ -338,17 +338,6 @@ main {
     background-color: #555;
   }
   
-/* Jumbotron */
-.jumbotron {
-    padding: 2rem 1rem; /* Bawasan ang padding sa jumbotron para magmukhang mas maayos sa mobile screen */
-}
-
-/* Card-Trivia at Card-Care */
-.card-trivia,
-.card-care {
-    margin-bottom: 10px; /* Bawasan ang spacing sa pagitan ng dalawang card */
-}
-
 /* Media query para sa mga screens ng laptop */
 @media (min-width: 1024px) {
     #product-cards .col {
@@ -400,7 +389,7 @@ main {
     }
 
     .jumbotron {
-        padding: 1rem; /* Pagpalit sa padding para hindi masyadong malaki */
+        padding: 2rem 1rem; /* Pagpalit sa padding para hindi masyadong malaki */
         text-align: center; /* I-center ang text */
         background-size: cover; /* Baguhin ang background size */
     }
