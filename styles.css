@@ -432,11 +432,12 @@ main {
         padding-bottom: 20px;
     }
 
+    /* Dagdagan ng margin-bottom ang navbar para mapalapit ito sa carousel */
     .navbar {
         margin-bottom: 0; /* Tanggalin muna ang existing margin-bottom */
-        margin-bottom: 5px; /* Dagdagan ng margin sa ibaba */
+        margin-bottom: 15px; /* Dagdagan ng margin sa ibaba */
     }
-    
+
     .card-trivia,
     .card-care {
         padding-top: 25px;
