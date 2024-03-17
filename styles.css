@@ -429,7 +429,7 @@ main {
 /* Media query para sa mobile screens */
 @media (max-width: 425px) {
     .h-auto {
-        padding-bottom: 20px;
+        padding-bottom: 0;
     }
 
     .card-trivia,
@@ -452,6 +452,7 @@ main {
 
     /* Dagdagan ng padding o margin ang carousel */
     .carousel {
+        padding-top: 0;
         margin-top: 0; /* Dagdagan ng margin sa itaas */
         margin-bottom: 5px; /* Dagdagan ng margin sa ibaba */
     }
