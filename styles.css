@@ -391,6 +391,14 @@ main {
 
 /* Media query para sa mobile screens */
 @media (max-width: 576px) {
+    .header {
+        padding-bottom: 20px;
+    }
+
+    .navbar {
+        padding-bottom: 15px;
+    }
+
     .jumbotron {
         padding: 1rem; /* Pagpalit sa padding para hindi masyadong malaki */
         text-align: center; /* I-center ang text */
@@ -432,10 +440,8 @@ main {
         padding-bottom: 20px;
     }
 
-    /* Dagdagan ng margin-bottom ang navbar para mapalapit ito sa carousel */
     .navbar {
-        margin-bottom: 0; /* Tanggalin muna ang existing margin-bottom */
-        margin-bottom: 15px; /* Dagdagan ng margin sa ibaba */
+        padding-bottom: 15px;
     }
 
     .card-trivia,
