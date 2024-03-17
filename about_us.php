@@ -12,8 +12,8 @@
     <style>
 /* Container styles */
 .about-container {
-    padding-top: 75px;
-    margin-top: 75px;
+    padding-top: 60px;
+    margin-top: auto;
 }
 
 /* Section headings */
