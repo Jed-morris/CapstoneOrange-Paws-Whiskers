@@ -16,6 +16,10 @@
     margin-top: auto;
 }
 
+.container {
+    padding-top: 15px;
+}
+
 /* Section headings */
 h2, h3 {
     color: #333;
