@@ -12,13 +12,6 @@ body {
     color: #333; /* Tertiary text color */
 }
 
-main {
-    overflow-y: auto;
-    width: 100%;
-    padding-top: 60px;
-    margin: 0;
-}
-
 /* Navbar styling */
 .navbar {
     background-color: steelblue;
@@ -101,6 +94,18 @@ main {
     box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
 }  
 
+main {
+    overflow-y: auto;
+    width: 100%;
+    padding-top: 60px;
+    margin: 0;
+}
+
+.container-fluid.pb-4 {
+    padding: 0;
+    margin: 0;
+}
+
 /* Custom CSS for Carousel */
 .carousel-item {
     min-height: 300px; /* Set a minimum height for the carousel items */
@@ -110,10 +115,10 @@ main {
 }
 
 .carousel-item img {
-        height: 100vh; /* Set the height to 100% of the viewport height */
-        width: 100%; /* Set the width to 100% */
-        object-fit: cover; /* Ensure the image covers the entire space of the carousel item */
-        }
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensure the image covers the entire space of the carousel item */
+}
 
 .carousel-item h2 {
     font-size: 2.5rem; /* Font size for the heading */
