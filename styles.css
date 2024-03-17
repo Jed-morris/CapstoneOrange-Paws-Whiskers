@@ -424,6 +424,32 @@ main {
     }
 }
 
+/* Media query para sa mobile screens */
+@media (max-width: 425px) {
+    .card-trivia,
+    .card-care {
+        margin-bottom: 30px; /* Dagdagan ang space sa pagitan ng mga card */
+    }
+    
+    /* I-adjust ang lapad ng bawat card */
+    #product-cards .col {
+        flex: 0 0 calc(100% - 10px); /* Ang 10px na pagitan ayon sa margin */
+        margin-right: 10px; /* Dagdagan ang space sa kanan ng bawat card */
+        scroll-snap-align: start; /* I-align ang mga card sa start ng scroll */
+    }
+
+    /* I-adjust ang margin ng huling card para hindi magkaroon ng extra space */
+    #product-cards .col:last-child {
+        margin-right: 0; /* Walang margin sa kanan ng huling card */
+    }
+
+    /* Dagdagan ng padding o margin ang carousel */
+    .carousel {
+        margin-top: 10px; /* Dagdagan ng margin sa itaas */
+        margin-bottom: 10px; /* Dagdagan ng margin sa ibaba */
+    }
+}
+
 /* Media query para sa pinakamaliit na screens */
 @media (max-width: 375px) {
     .jumbotron {
