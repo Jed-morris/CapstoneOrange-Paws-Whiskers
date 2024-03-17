@@ -13,9 +13,10 @@ body {
 }
 
 main {
-    flex: 1;
     overflow-y: auto;
-    padding-top: 100px;
+    width: 100%;
+    padding-top: 60px;
+    margin: 0;
 }
 
 /* Navbar styling */
