@@ -11,8 +11,8 @@
     
     <style>
 /* Container styles */
-.container {
-    margin-top: 75px;
+.about-container {
+    padding-top: 75px;
 }
 
 /* Section headings */
@@ -124,7 +124,7 @@ p {
     </header>
 
 <main>
-    <div class="container-fluid pb-4">
+    <div class="about-container">
         <article>
             <div class="row">
                 <div class="col-md-8">
