@@ -23,6 +23,17 @@
         margin: 0 auto;
         padding: 20px;
     }
+
+    @media (max-width: 576px) {
+    .card.transparent-card {
+        max-width: 100%;
+    }
+
+    .card.transparent-card .shadow {
+        width: 100%;
+        max-width: 100%;
+    }
+}
     </style>
 </head>
 
